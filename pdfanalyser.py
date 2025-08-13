@@ -55,7 +55,7 @@ if not st.session_state.api_validated:
     api_key_input = st.text_input(
         "Please enter your Gemini API Key:",
         type="password",
-        placeholder="sk-...",
+        placeholder="AI....",
         help="Your key will only be stored for this session."
     )
 
@@ -218,3 +218,4 @@ if prompt:
 
         if "source_documents" in response and response["source_documents"]:
             render_sources(response["source_documents"])
+
