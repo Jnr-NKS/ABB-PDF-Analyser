@@ -1,0 +1,6 @@
+streamlit
+langchain
+langchain-google-genai
+pypdf
+faiss-cpu
+python-dotenv
