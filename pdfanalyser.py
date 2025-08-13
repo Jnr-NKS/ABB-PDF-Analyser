@@ -8,7 +8,7 @@ import streamlit as st
 
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain.chains import ConversationalRetrievalChain
-from langchain.document_loaders import PyPDFLoader
+from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import FAISS
 from langchain.memory import ConversationBufferMemory
@@ -218,4 +218,5 @@ if prompt:
 
         if "source_documents" in response and response["source_documents"]:
             render_sources(response["source_documents"])
+
 
